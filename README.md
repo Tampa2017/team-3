@@ -1,7 +1,5 @@
-"# team-3"
-
 # Team 3
-Isaiah, Chad, Henry, Chris, Iowa
+Isaiah, Chad, Henry, Chris, Alex
 
 ## Intial Idea
 Node.js web app
