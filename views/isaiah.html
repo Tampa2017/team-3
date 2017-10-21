@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="index.js"></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Guppy World</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron-narrow.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.Smin.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <p><a id="playB" class="btn btn-lg btn-success" href="#" role="button"  onClick="soundB()">Play 🔊</a></p>
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+                <li role="presentation" ><a href="index.html">Trivia</a></li>
+                <li role="presentation"><a href="scoreboard.html">Scoreboard</a></li>
+                <li role="presentation"><a href="about.html">About</a></li>
+                <li role="presentation"><a href="profile.html" id="usr-nav-id">Profile</a></li>
+    
+                <script>
+                    if (localStorage.name){
+                      console.log(localStorage.name);
+                      y = document.getElementById("usr-nav-id");
+                      y.innerHTML = localStorage.name;
+                      }
+                </script>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="jumbotron">
+        <h1 id="usr-name">Isaiah<h1>
+        <p class="lead"> A profile all about Isaiah.</p>
+        <p><img src="" class="img-fluid" alt="Profile Img"></p>
+        <p>Guppies: 2 many 2 count</p>
+        <p>Whales: 1337</p>
+        <p>Good Habits: all</p>
+        <p>Friends: <a href="profile.html" id="usr-friend">Isaiah</a></p>
+        <script>
+                if (localStorage.name){
+                  console.log(localStorage.name);
+                  y = document.getElementById("usr-friend");
+                  y.innerHTML = localStorage.name;
+                  }
+        </script>
+
+
+      <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="document.getElementById('id01').style.display='block'">Msg</a></p>
+      </div>
+
+ 
+      <footer class="footer">
+        <p>&copy; 2016 Company, Inc.</p>
+      </footer>
+
+    </div> <!-- /container -->
+<!-- The Modal -->
+<div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+      class="close" title="Close Modal">&times;</span>
+      
+      
+        <!-- Modal Content -->
+      
+            <div id="login-overlay" class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <form id="msg-form" method="POST"  novalidate="novalidate">
+                          <div class="form-group">
+                              <label for="subject" class="control-label">Subject</label>
+                              <input type="text" class="form-control" id="username-form" name="name" value="" required="" title="" placeholder="">
+                              <span class="help-block"></span>
+                          </div>
+                          <div class="form-group">
+                              <label for="text-area" class="control-label">Msg</label>
+                              <br>
+                              <textarea rows="4" col="50" style="margin: 0px; height: 25em; width: 30em;"></textarea>
+                              <span class="help-block"></span>
+                          </div>
+                          <div id="loginErrorMsg" class="alert alert-error hide">Message Error</div>
+                          <button  onclick="msg()" style="display: block; margin: 0 auto;"  class="btn btn-success btn-block">Send</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      
+          </div> <!-- /container -->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
