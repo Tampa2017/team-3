@@ -26,8 +26,38 @@ window.onclick = function(event) {
 //     }
 // }
 
+
+function pointy(x, y)
+{
+  for(k = 1; k < (x + 1); k++)
+  {
+  document.getElementById("fish"+k).style.display = "initial";
+  }
+
+  for(t = 1; t < (y + 1); t++)
+  {
+    document.getElementById("whale"+t).style.display = "initial";
+  }
+
+
+
+}
+function pointy2(x, y)
+{
+  for(k = 0; k < y; k++)
+  {
+  document.getElementById("fish"+k).style.display = "initial";
+  }
+
+  for(t = 0; k < x; t++)
+  {
+    document.getElementById("whale"+t).style.display = "initial";
+  }
+}
+
 function soundB()
 {
+
   if(Bbool == false)
   {
   back.play();
