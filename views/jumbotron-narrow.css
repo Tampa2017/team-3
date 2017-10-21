@@ -74,6 +74,15 @@ body {
 	text-align: center;
 	border-bottom: 1px solid #e5e5e5;
 }
+
+.jumbotronFish{
+
+	width: 700px;
+	text-align: center;
+
+}
+
+
 .jumbotron .btn {
 	padding: 14px 24px;
 	font-size: 21px;
