@@ -67,13 +67,16 @@
             </script>
         <p class="lead"> A profile all about you.</p>
         <p><img src="" class="img-fluid" alt="Profile Img"></p>
-        <p>Guppies: 20</p>
-        <p>Whales: 2</p>
+        <p align="center">Guppies: <span id="guppydisp"></span></p>
+        <p align="center">Whales: <span id="whaledisp"></span></p>
         <p>Good Habits: Recycling</p>
         <p>Friends: <a href="isaiah.html">Isaiah</a></p>
 
       </div>
-
+      <script>
+      document.getElementById("guppydisp").innerHTML = (localStorage.getItem("points")-200*parseInt(localStorage.getItem("points")/200))/10;
+      document.getElementById("whaledisp").innerHTML = parseInt((localStorage.getItem("points"))/200);
+      </script>
 
     </div> <!-- /container -->
 
