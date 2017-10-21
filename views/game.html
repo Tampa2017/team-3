@@ -450,7 +450,10 @@
           {
             var goodSound = new Audio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/goodbell.mp3");
             goodSound.play();
-              return 'CORRECT';
+            var pointval = parseInt(localStorage.getItem("points"))+10;
+            localStorage.setItem("points", pointval);
+            document.getElementById("pointdisp").innerHTML = pointval;
+            return 'CORRECT';
             }
       };
   });
@@ -481,12 +484,10 @@
         <h1>Swimming With Guppies</h1>
       </div>
 
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
         <div class="modal-dialog">
           <div class="modal-content">
              <div class="modal-header">
+             <h4 align="center">Points: <span id="pointdisp"></span></h4>
                 <h3><span class="label label-warning" id="qid">2</span> THREE is CORRECT</h3>
             </div>
             <div class="modal-body">
@@ -518,6 +519,12 @@
     </div>
 
       <script>
+      if (localStorage.getItem("points") === null) {
+        // Store
+        localStorage.setItem("points", "0");
+      }
+      // Retrieve
+      document.getElementById("pointdisp").innerHTML = localStorage.getItem("points");
 
       // tell the embed parent frame the height of the content
       if (window.parent && window.parent.parent){

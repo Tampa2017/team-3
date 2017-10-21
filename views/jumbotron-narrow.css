@@ -180,7 +180,7 @@ body {
 }
 #playB {
   height: auto;
-  width: auto;
+  width: 75px;
   font-size: 14px;
   position: fixed;
   top: 5px;
