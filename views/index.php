@@ -1,5 +1,8 @@
-<!DOCTYPE html>
+
+<?php setcookie('login', "Yo", time() + (86400 * 30), "/", "", 0); ?>
+
 <html lang="en">
+
   <head>
     <script type="text/javascript" src="index.js"></script>
     <meta charset="utf-8">
@@ -10,7 +13,8 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Home</title>
+
+    <title>Narrow Jumbotron Template for Bootstrap</title>
 
 
 
@@ -41,20 +45,11 @@
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
-            
-            <li role="presentation" class="active"><a href="index.html">Home</a></li>
-            <li role="presentation" ><a href="game.html">Trivia</a></li>
+            <li role="presentation" class="active"><a href="#">Trivia</a></li>
             <li role="presentation"><a href="scoreboard.html">Scoreboard</a></li>
             <li role="presentation"><a href="about.html">About</a></li>
-            <li role="presentation"><a href="profile.html" id="usr-nav-id">Profile</a></li>
+            <li role="presentation"> <?php echo $COOKIE[] ?></li>
 
-            <script>
-                if (localStorage.name){
-                  console.log(localStorage.name);
-                  y = document.getElementById("usr-nav-id");
-                  y.innerHTML = localStorage.name;
-                  }
-            </script>
           </ul>
         </nav>
       </div>
@@ -64,11 +59,6 @@
         <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="document.getElementById('id01').style.display='block'">Login</a></p>
         <p><a class="btn btn-lg btn-success" href="#" role="button">Sign Up</a></p>
       </div>
-      <script>
-        function login() {
-          localStorage.name = document.getElementById("username-form").value;
-        }
-      </script>
 
 
 
@@ -83,10 +73,10 @@ class="close" title="Close Modal">&times;</span>
       <div id="login-overlay" class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
-                <form id="loginForm" method="POST"  novalidate="novalidate">
+                <form id="loginForm" method="POST" action="/php/login.php" novalidate="novalidate">
                     <div class="form-group">
                         <label for="username" class="control-label">Username</label>
-                        <input type="text" class="form-control" id="username-form" name="name" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
+                        <input type="text" class="form-control" id="name" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
                         <span class="help-block"></span>
                     </div>
                     <div class="form-group">
@@ -95,7 +85,7 @@ class="close" title="Close Modal">&times;</span>
                         <span class="help-block"></span>
                     </div>
                     <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
-                    <button  onclick="login()" style="display: block; margin: 0 auto;"  class="btn btn-success btn-block">Login</button>
+                    <button style="display: block; margin: 0 auto;" type="submit" class="btn btn-success btn-block">Login</button>
                 </form>
             </div>
         </div>
