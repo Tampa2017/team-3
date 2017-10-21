@@ -24,9 +24,16 @@ window.onclick = function(event) {
     }
 }
 
-function correct()
+function correctS()
 {
+  alert("correctkkk");
   goodSound.play();
+}
+
+
+function soundBad()
+{
+  badSound.play();
 }
 
 function soundB()
