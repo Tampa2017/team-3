@@ -505,9 +505,20 @@
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="game.html">Trivia</a></li>
+            <li role="presentation" ><a href="index.html">Home</a></li>
+            <li role="presentation" ><a href="game.html">Trivia</a></li>
             <li role="presentation"><a href="scoreboard.html">Scoreboard</a></li>
-            <li role="presentation"><a href="about.html">About</a></li>
+            <li role="presentation" class="active"><a href="about.html">About</a></li>
+            <li role="presentation"><a href="profile.html" id="usr-nav-id">Profile</a></li>
+            <li role="presentation"><a href="information.html">Info</a> </li>
+
+            <script>
+                if (localStorage.name){
+                  console.log(localStorage.name);
+                  y = document.getElementById("usr-nav-id");
+                  y.innerHTML = localStorage.name;
+                  }
+            </script>
 
 
           </ul>
