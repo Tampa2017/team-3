@@ -441,9 +441,17 @@
 
       $.fn.checking = function(ck) {
           if (ck != $ans)
+          {
+            var badSound = new Audio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/bad.mp3");
+            badSound.play();
               return 'INCORRECT';
+            }
           else
+          {
+            var goodSound = new Audio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/goodbell.mp3");
+            goodSound.play();
               return 'CORRECT';
+            }
       };
   });
 
@@ -510,6 +518,7 @@
     </div>
 
       <script>
+
       // tell the embed parent frame the height of the content
       if (window.parent && window.parent.parent){
         window.parent.parent.postMessage(["resultsFrame", {

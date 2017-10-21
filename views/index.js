@@ -26,7 +26,7 @@ window.onclick = function(event) {
 
 function correctS()
 {
-  alert("correctkkk");
+  alert("correct yayaya");
   goodSound.play();
 }
 
