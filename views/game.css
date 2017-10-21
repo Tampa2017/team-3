@@ -1,3 +1,5 @@
+/* Interesting css to 'animate' the game */
+
 #qid {
   padding: 10px 15px;
   -moz-border-radius: 50px;
@@ -39,6 +41,8 @@ label .btn-label {
 label .glyphicon {
     top: 34%
 }
+
+/* Animations for the game */
 .element-animation1 {
     animation: animationFrames ease .8s;
     animation-iteration-count: 1;
@@ -83,6 +87,8 @@ label .glyphicon {
     -ms-animation-iteration-count: 1;
     -ms-transform-origin: 50% 50%
 }
+
+/* Animation frames */
 @keyframes animationFrames {
     0% {
         opacity: 0;
@@ -144,6 +150,7 @@ label .glyphicon {
     }
 }
 
+/* Modal */
 .modal-header {
     background-color: transparent;
     color: inherit
@@ -152,12 +159,14 @@ label .glyphicon {
 .modal-body {
     min-height: 205px
 }
+
 #loadbar {
     position: absolute;
     width: 62px;
     height: 77px;
     top: 2em
 }
+/* I have no idea what this does. Good Luck. */
 .blockG {
     position: absolute;
     background-color: #FFF;
@@ -194,6 +203,8 @@ label .glyphicon {
     animation-iteration-count: infinite;
     animation-direction: linear
 }
+
+/*Rotations?*/
 #rotateG_01 {
     left: 0;
     top: 28px;
@@ -306,6 +317,8 @@ label .glyphicon {
     animation-delay: 1.1s;
     transform: rotate(-135deg)
 }
+
+/*Keyframes*/
 @-moz-keyframes fadeG {
     0% {
         background-color: #000
