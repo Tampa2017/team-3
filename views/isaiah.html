@@ -43,7 +43,7 @@
                 <li role="presentation" ><a href="index.html">Trivia</a></li>
                 <li role="presentation"><a href="scoreboard.html">Scoreboard</a></li>
                 <li role="presentation"><a href="about.html">About</a></li>
-                <li role="presentation" class="active"><a href="#" id="usr-nav-id">Profile</a></li>
+                <li role="presentation"><a href="profile.html" id="usr-nav-id">Profile</a></li>
     
                 <script>
                     if (localStorage.name){
@@ -57,29 +57,62 @@
       </div>
 
       <div class="jumbotron">
-        <h1 id="usr-name">About us!<h1>
-        <script>
-            if (localStorage.name){
-                console.log(localStorage.name);
-                y = document.getElementById("usr-name");
-                y.innerHTML = localStorage.name;
-            }
-            </script>
-        <p class="lead"> A profile all about you.</p>
+        <h1 id="usr-name">Isaiah<h1>
+        <p class="lead"> A profile all about Isaiah.</p>
         <p><img src="" class="img-fluid" alt="Profile Img"></p>
-        <p>Guppies: 20</p>
-        <p>Whales: 2</p>
-        <p>Good Habits: Recycling</p>
-        <p>Friends: <a href="isaiah.html">Isaiah</a></p>
+        <p>Guppies: 2 many 2 count</p>
+        <p>Whales: 1337</p>
+        <p>Good Habits: all</p>
+        <p>Friends: <a href="profile.html" id="usr-friend">Isaiah</a></p>
+        <script>
+                if (localStorage.name){
+                  console.log(localStorage.name);
+                  y = document.getElementById("usr-friend");
+                  y.innerHTML = localStorage.name;
+                  }
+        </script>
+
+
+      <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="document.getElementById('id01').style.display='block'">Msg</a></p>
       </div>
 
-
+ 
       <footer class="footer">
         <p>&copy; 2016 Company, Inc.</p>
       </footer>
 
     </div> <!-- /container -->
-
+<!-- The Modal -->
+<div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+      class="close" title="Close Modal">&times;</span>
+      
+      
+        <!-- Modal Content -->
+      
+            <div id="login-overlay" class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <form id="msg-form" method="POST"  novalidate="novalidate">
+                          <div class="form-group">
+                              <label for="subject" class="control-label">Subject</label>
+                              <input type="text" class="form-control" id="username-form" name="name" value="" required="" title="" placeholder="">
+                              <span class="help-block"></span>
+                          </div>
+                          <div class="form-group">
+                              <label for="text-area" class="control-label">Msg</label>
+                              <br>
+                              <textarea></textarea>
+                              <span class="help-block"></span>
+                          </div>
+                          <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+                          <button  onclick="login()" style="display: block; margin: 0 auto;"  class="btn btn-success btn-block">Login</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      
+          </div> <!-- /container -->
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
