@@ -34,10 +34,12 @@
 </head>
 
 <body>
+
   <!-- THIS ALERTS WITH SCORE -->
   <script>
 
   </script>
+
 	<p><a id="playB" class="btn btn-lg btn-success" href="#" role="button"  onClick="soundB()">Play 🔊</a></p>
 	<div class="container">
 		<div class="header clearfix">
@@ -69,6 +71,7 @@
 -->
 <img id = "logo" src="./logo.png" alt="Swimming with Guppies logo">
 
+
 <div>
 	<table style = "width: 100px; height: 100px; text-align:center;">
 		<tr>
@@ -90,6 +93,7 @@
 		</tr>
 	</table>
 </div>
+
 
 <div class="row marketing">
 	<div class = "jumbotronFish">
@@ -154,4 +158,13 @@
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
+<script>
+//alert('score is '+localStorage.getItem("points"));
+var fisher = (localStorage.getItem("points")-200*parseInt(localStorage.getItem("points")/200))/10;
+var whale = parseInt((localStorage.getItem("points"))/200);
+//alert('mod '+fisher);
+//alert('whale   '+whale);
+pointy(fisher, whale);
+
+</script>
 </html>
