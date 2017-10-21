@@ -40,18 +40,20 @@
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
-                <li role="presentation" ><a href="game.html">Trivia</a></li>
-                <li role="presentation"><a href="scoreboard.html">Scoreboard</a></li>
-                <li role="presentation"><a href="about.html">About</a></li>
-                <li role="presentation" class="active"><a href="#" id="usr-nav-id">Profile</a></li>
+            <li role="presentation" ><a href="index.html">Home</a></li>
+            <li role="presentation" ><a href="game.html">Trivia</a></li>
+            <li role="presentation"><a href="scoreboard.html">Scoreboard</a></li>
+            <li role="presentation" ><a href="about.html">About</a></li>
+            <li role="presentation" class="active"><a href="profile.html" id="usr-nav-id">Profile</a></li>
+            <li role="presentation"><a href="information.html">Info</a> </li>
 
-                <script>
-                    if (localStorage.name){
-                      console.log(localStorage.name);
-                      y = document.getElementById("usr-nav-id");
-                      y.innerHTML = localStorage.name;
-                      }
-                </script>
+            <script>
+                if (localStorage.name){
+                  console.log(localStorage.name);
+                  y = document.getElementById("usr-nav-id");
+                  y.innerHTML = localStorage.name;
+                  }
+            </script>
           </ul>
         </nav>
       </div>
@@ -70,8 +72,7 @@
         <p align="center">Guppies: <span id="guppydisp"></span></p>
         <p align="center">Whales: <span id="whaledisp"></span></p>
         <p>Good Habits: Recycling</p>
-        <p>Friends: <a href="isaiah.html">Isaiah</a></p>
-
+        
       </div>
       <script>
       document.getElementById("guppydisp").innerHTML = (localStorage.getItem("points")-200*parseInt(localStorage.getItem("points")/200))/10;
