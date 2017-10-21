@@ -1,3 +1,7 @@
+//Jquery maybe?
+//I have no idea how this works
+//But its purpose regards with the trivia game
+
 $(function(){
     var loading = $('#loadbar').hide();
     $(document)

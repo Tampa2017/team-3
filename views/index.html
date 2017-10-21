@@ -59,9 +59,12 @@
           </ul>
         </nav>
       </div>
+
+	  <img id = "logo" src="./logo.png" alt="Swimming with Guppies logo">
+
       <div class="jumbotron">
-        <h1>Swimming With Guppies</h1>
-        <p class="lead">This site is a part of the OCDA. The objective is promoting, protecting, and preserving marine life.</p>
+
+        <p class="lead"><br>An Ocean's Daughter Conservation Alliance Game<br>Love Games?<br>Love Rewards?<br>Play Now, and Save Our Oceans!</p>
         <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="document.getElementById('id01').style.display='block'">Login</a></p>
         <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="document.getElementById('id02').style.display='block'">Sign Up</a></p>
       </div>
@@ -84,7 +87,7 @@ class="close" title="Close Modal">&times;</span>
       <div id="login-overlay" class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
-                <form id="loginForm" method="POST"  novalidate="novalidate">
+
                     <div class="form-group">
                         <label for="username" class="control-label">Username</label>
                         <input type="text" class="form-control" id="username-form" name="name" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
@@ -96,8 +99,8 @@ class="close" title="Close Modal">&times;</span>
                         <span class="help-block"></span>
                     </div>
                     <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
-                    <button  onclick="login()" style="display: block; margin: 0 auto;"  class="btn btn-success btn-block">Login</button>
-                </form>
+                    <button  onclick="location.href = 'game.html';" style="display: block; margin: 0 auto;"  class="btn btn-success btn-block">Login</button>
+
             </div>
         </div>
     </div>
@@ -109,7 +112,6 @@ class="close" title="Close Modal">&times;</span>
 
 
       <!-- Modal Content -->
-
           <div id="login-overlay" class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
