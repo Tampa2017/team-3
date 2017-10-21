@@ -42,19 +42,7 @@
         <nav>
           <ul class="nav nav-pills pull-right">
             <li role="presentation" ><a href="index.html">Home</a></li>
-            <li role="presentation" ><a href="game.html">Trivia</a></li>
-            <li role="presentation"><a href="scoreboard.html">Scoreboard</a></li>
-            <li role="presentation" class="active"><a href="about.html">About</a></li>
-            <li role="presentation"><a href="profile.html" id="usr-nav-id">Profile</a></li>
-            <li role="presentation"><a href="information.html">Info</a> </li>
-
-            <script>
-                if (localStorage.name){
-                  console.log(localStorage.name);
-                  y = document.getElementById("usr-nav-id");
-                  y.innerHTML = localStorage.name;
-                  }
-            </script>
+            <li role="presentation" ><a href="information.html">Information</a></li>
           </ul>
         </nav>
       </div>
@@ -63,13 +51,31 @@
 
 
       <div class="jumbotron">
-        <h1>About us!<h1>
-        <p class="about">Education is one of the foundational elements of Ocean’s Daughter Conservation Alliance. We believe that the most lasting conservation efforts arise from establishing meaningful interactions between humans and animals. For this very reason, we have cultivated a “Connecting Kids with Conservation” initiative.</p> 
-        <img src="education.jpg">
-    	<p class="about">Through the use of immersive story-telling, hands-on displays, and engaging curricula, we are proud to offer traveling educational presentations solidified in Sunshine State Standards. We bring the science books to life in your classroom!</p>
+        <p>From here there can be a limitless information reagarding animals broken up into parts.</p>
+        <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="document.getElementById('id01').style.display='block'">Shark</a></p>
       </div>
-    </div> <!-- /container -->
-
+<!-- The Modal -->
+<div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'"
+  class="close" title="Close Modal">&times;</span>
+  
+  
+    <!-- Modal Content -->
+  
+        <div id="login-overlay" class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Great_white_shark_south_africa.jpg">
+                  <p>Sharks are a group of elasmobranch fish characterized by a cartilaginous skeleton, five to seven gill slits on the sides of the head, and pectoral fins that are not fused to the head. <a>Wikipedia</a></p>
+              </div>
+          </div>
+      </div>
+  
+      </div> <!-- /container -->
+      !-- The Modal -->
+      <div id="id02" class="modal">
+        <span onclick="document.getElementById('id02').style.display='none'"
+      class="close" title="Close Modal">&times;</span>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
