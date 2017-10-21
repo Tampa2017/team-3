@@ -58,8 +58,10 @@
         </nav>
       </div>
 
+	  <img src="./logo.png" alt="Swimming with Guppies logo">
+
       <div class="jumbotron">
-        <h1 id="usr-name">About us!<h1>
+        <h1 id="usr-name">Profile<h1>
         <script>
             if (localStorage.name){
                 console.log(localStorage.name);
@@ -72,7 +74,7 @@
         <p align="center">Guppies: <span id="guppydisp"></span></p>
         <p align="center">Whales: <span id="whaledisp"></span></p>
         <p>Good Habits: Recycling</p>
-        
+
       </div>
       <script>
       document.getElementById("guppydisp").innerHTML = (localStorage.getItem("points")-200*parseInt(localStorage.getItem("points")/200))/10;
