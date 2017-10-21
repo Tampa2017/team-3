@@ -60,9 +60,9 @@
       </div>
       <div class="jumbotron">
         <h1>Swimming With Guppies</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p class="lead">This site is a part of the OCDA. The objective is promoting, protecting, and preserving marine life.</p>
         <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="document.getElementById('id01').style.display='block'">Login</a></p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign Up</a></p>
+        <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="document.getElementById('id02').style.display='block'">Sign Up</a></p>
       </div>
       <script>
         function login() {
@@ -102,6 +102,42 @@ class="close" title="Close Modal">&times;</span>
     </div>
 
     </div> <!-- /container -->
+    !-- The Modal -->
+    <div id="id02" class="modal">
+      <span onclick="document.getElementById('id02').style.display='none'"
+    class="close" title="Close Modal">&times;</span>
+    
+    
+      <!-- Modal Content -->
+    
+          <div id="login-overlay" class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form id="loginForm" method="POST"  novalidate="novalidate">
+                        <div class="form-group">
+                            <label for="username" class="control-label">Username</label>
+                            <input type="text" class="form-control" id="username-form" name="name" value="" required="" title="Please enter you username" >
+                            <span class="help-block"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="control-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="pass" value="" required="" title="Please enter your password">
+                            <span class="help-block"></span>
+                        </div>
+                        <div class="form-group">
+                          <label for="Email" class="control-label">Email</label>
+                          <input type="text" class="form-control" id="email" name="e" value="" required="" title="Please enter your or your parent's email address." placeholder="example@gmail.com">
+                          <span class="help-block"></span>
+                       </div>
+                        <div id="loginErrorMsg" class="alert alert-error hide"></div>
+                        <button  onclick="login()" style="display: block; margin: 0 auto;"  class="btn btn-success btn-block">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        </div> <!-- /container -->
+    
 
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
