@@ -20,6 +20,12 @@ window.onclick = function(event) {
     }
 }
 
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         document.getElementById("id01").style.display = "none";
+//     }
+// }
+
 function soundB()
 {
   if(Bbool == false)
