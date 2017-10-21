@@ -24,6 +24,11 @@ window.onclick = function(event) {
     }
 }
 
+function correct()
+{
+  goodSound.play();
+}
+
 function soundB()
 {
   if(Bbool == false)
