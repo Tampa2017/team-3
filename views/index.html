@@ -41,12 +41,13 @@
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
-
-
-            <li role="presentation" class="active"><a href="#">Trivia</a></li>
+            
+            <li role="presentation" ><a href="index.html">Home</a></li>
+            <li role="presentation" ><a href="game.html">Trivia</a></li>
             <li role="presentation"><a href="scoreboard.html">Scoreboard</a></li>
-            <li role="presentation"><a href="about.html">About</a></li>
+            <li role="presentation" class="active"><a href="about.html">About</a></li>
             <li role="presentation"><a href="profile.html" id="usr-nav-id">Profile</a></li>
+            <li role="presentation"><a href="information.html">Info</a> </li>
 
             <script>
                 if (localStorage.name){
@@ -60,7 +61,7 @@
       </div>
       <div class="jumbotron">
         <h1>Swimming With Guppies</h1>
-        <p class="lead">Play Games<br>Earn Rewards<br>Save the Environment</p>
+        <p class="lead">This site is a part of the OCDA. The objective is promoting, protecting, and preserving marine life.</p>
         <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="document.getElementById('id01').style.display='block'">Login</a></p>
         <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="document.getElementById('id02').style.display='block'">Sign Up</a></p>
       </div>
@@ -80,56 +81,50 @@ class="close" title="Close Modal">&times;</span>
 
   <!-- Modal Content -->
 
-  <div id="login-overlay" class="modal-dialog">
-	<div class="modal-content">
-		<div class="modal-body">
-			<!-- <form id="loginForm" method="POST" action="/login/" novalidate="novalidate"> -->
-				<div class="form-group">
-					<label for="username" class="control-label">Username</label>
-					<input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
-					<span class="help-block"></span>
-				</div>
-				<div class="form-group">
-					<label for="password" class="control-label">Password</label>
-					<input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
-					<span class="help-block"></span>
-				</div>
-				<div id="loginErrorMsg" class="alert alert-error hide">Wrong username og password</div>
-				<button style="display: block; margin: 0 auto;" onclick="location.href='game.html#';" class="btn btn-success btn-block">Login</button>
-			<!-- </form> -->
-		</div>
-	</div>
-</div>
+      <div id="login-overlay" class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <form id="loginForm" method="POST"  novalidate="novalidate">
+                    <div class="form-group">
+                        <label for="username" class="control-label">Username</label>
+                        <input type="text" class="form-control" id="username-form" name="name" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
+                        <span class="help-block"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="control-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="pass" value="" required="" title="Please enter your password">
+                        <span class="help-block"></span>
+                    </div>
+                    <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+                    <button  onclick="login()" style="display: block; margin: 0 auto;"  class="btn btn-success btn-block">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
 
-</div>
-
-    <!-- The Modal -->
     <div id="id02" class="modal">
       <span onclick="document.getElementById('id02').style.display='none'"
     class="close" title="Close Modal">&times;</span>
-
-
+    
+    
       <!-- Modal Content -->
-
+    
           <div id="login-overlay" class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
-
                         <div class="form-group">
                             <label for="username" class="control-label">Username</label>
-                            <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter your username" placeholder="example@gmail.com">
+                            <input type="text" class="form-control" id="username-form" name="name" value="" required="" title="Please enter you username" >
                             <span class="help-block"></span>
                         </div>
                         <div class="form-group">
                             <label for="password" class="control-label">Password</label>
-                            <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+                            <input type="password" class="form-control" id="password" name="pass" value="" required="" title="Please enter your password">
                             <span class="help-block"></span>
                         </div>
                         <div class="form-group">
-                            <label for="grade" class="control-label">Grade</label>
-                            <select class="form-control" id="state_id">
 			                           <option value="K">Kindergarten</option>
-			                           <option value="1">First</option>
                                  <option value="2">Second</option>
                                  <option value="3">Third</option>
                                  <option value="4">Fourth</option>
@@ -150,9 +145,8 @@ class="close" title="Close Modal">&times;</span>
                 </div>
             </div>
         </div>
-    </div>
-
-    </div> <!-- /container -->
+      </div>
+    
 
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
