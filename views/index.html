@@ -113,7 +113,7 @@ class="close" title="Close Modal">&times;</span>
           <div id="login-overlay" class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
-                    <form id="loginForm" method="POST"  novalidate="novalidate">
+
                         <div class="form-group">
                             <label for="username" class="control-label">Username</label>
                             <input type="text" class="form-control" id="username-form" name="name" value="" required="" title="Please enter you username" >
@@ -125,13 +125,29 @@ class="close" title="Close Modal">&times;</span>
                             <span class="help-block"></span>
                         </div>
                         <div class="form-group">
-                          <label for="Email" class="control-label">Email</label>
-                          <input type="text" class="form-control" id="email" name="e" value="" required="" title="Please enter your or your parent's email address." placeholder="example@gmail.com">
-                          <span class="help-block"></span>
-                       </div>
-                        <div id="loginErrorMsg" class="alert alert-error hide"></div>
-                        <button  onclick="login()" style="display: block; margin: 0 auto;"  class="btn btn-success btn-block">Register</button>
-                    </form>
+
+                            <label for="grade" class="control-label">Grade</label>
+                            <select class="form-control" id="state_id">
+			                           <option value="K">Kindergarten</option>
+			                           <option value="1">First</option>
+                                 <option value="2">Second</option>
+                                 <option value="3">Third</option>
+                                 <option value="4">Fourth</option>
+                                 <option value="5">Fifth</option>
+                                 <option value="6">Sixth</option>
+                                 <option value="7">Seventh</option>
+                                 <option value="8">Eighth</option>
+                                 <option value="9">Ninth</option>
+                                 <option value="10">Tenth</option>
+                                 <option value="11">Eleventh</option>
+                                 <option value="12">Twelfth</option>
+                            </select>
+                            <span class="help-block"></span>
+                        </div>
+                        <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+                        <button style="display: block; margin: 0 auto;" onclick = "location.href = 'index.html';" class="btn btn-success btn-block">Sign Up</button>
+
+
                 </div>
             </div>
         </div>
