@@ -7,6 +7,13 @@ var winSound = new Audio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/win
 var back = new Audio("backWave.WAV");
 var Bbool = false;
 
+$(document).ready(function(){
+	//code here...
+	var code = $(".codemirror-textarea")[0];
+	var editor = CodeMirror.fromTextArea(code, {
+		lineNumbers : true
+	});
+});
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
