@@ -146,10 +146,10 @@ fieldset[disabled] .btn-primary.active {
   background-image: none;
 }
 .btn-success {
-  background-image: -webkit-linear-gradient(top, #5cb85c 0%, #419641 100%);
-  background-image:      -o-linear-gradient(top, #5cb85c 0%, #419641 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(#419641));
-  background-image:         linear-gradient(to bottom, #5cb85c 0%, #419641 100%);
+  background-image: -webkit-linear-gradient(top, #337ab7 0%, #419641 100%);
+  background-image:      -o-linear-gradient(top, #337ab7 0%, #419641 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#419641));
+  background-image:         linear-gradient(to bottom, #337ab7 0%, #419641 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff419641', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
@@ -463,11 +463,11 @@ fieldset[disabled] .btn-danger.active {
   background-repeat: repeat-x;
 }
 .progress-bar-success {
-  background-image: -webkit-linear-gradient(top, #5cb85c 0%, #449d44 100%);
-  background-image:      -o-linear-gradient(top, #5cb85c 0%, #449d44 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(#449d44));
-  background-image:         linear-gradient(to bottom, #5cb85c 0%, #449d44 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff449d44', GradientType=0);
+  background-image: -webkit-linear-gradient(top, #337ab7 0%, #204d74 100%);
+  background-image:      -o-linear-gradient(top, #337ab7 0%, #204d74 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#204d74));
+  background-image:         linear-gradient(to bottom, #337ab7 0%, #204d74 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff204d74', GradientType=0);
   background-repeat: repeat-x;
 }
 .progress-bar-info {

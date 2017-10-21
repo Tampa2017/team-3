@@ -776,7 +776,7 @@ h1[id] {
   background-color: #337ab7;
 }
 .color-swatches .brand-success {
-  background-color: #5cb85c;
+  background-color: #337ab7;
 }
 .color-swatches .brand-warning {
   background-color: #f0ad4e;
@@ -1508,7 +1508,7 @@ h1[id] {
   border-radius: 50%;
 }
 .bs-brand-item .glyphicon-ok {
-  background-color: #5cb85c;
+  background-color: #337ab7;
 }
 .bs-brand-item .glyphicon-remove {
   background-color: #d9534f;
