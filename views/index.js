@@ -14,6 +14,7 @@ var whaleScoreDisplay = 1;
 
 
 // When the user clicks anywhere outside of the modal, close it
+// ^^^^^ DOES NOT WORK THOUGH
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
