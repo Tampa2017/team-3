@@ -36,7 +36,7 @@
 <body>
   <!-- THIS ALERTS WITH SCORE -->
   <script>
-  alert('score is '+localStorage.getItem("points"));
+
   </script>
 	<p><a id="playB" class="btn btn-lg btn-success" href="#" role="button"  onClick="soundB()">Play 🔊</a></p>
 	<div class="container">
@@ -45,11 +45,11 @@
 				<ul class="nav nav-pills pull-right">
 					<li role="presentation" ><a href="index.html">Home</a></li>
 					<li role="presentation" ><a href="game.html">Trivia</a></li>
-					<li role="presentation"><a href="scoreboard.html">Scoreboard</a></li>
-					<li role="presentation" class="active"><a href="about.html">About</a></li>
+					<li role="presentation" class="active"><a href="scoreboard.html">Scoreboard</a></li>
+					<li role="presentation"><a href="about.html">About</a></li>
 					<li role="presentation"><a href="profile.html" id="usr-nav-id">Profile</a></li>
 					<li role="presentation"><a href="information.html">Info</a> </li>
-		
+
 					<script>
 						if (localStorage.name){
 						  console.log(localStorage.name);
@@ -67,6 +67,29 @@
 		<p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
 	</div>
 -->
+<img id = "logo" src="./logo.png" alt="Swimming with Guppies logo">
+
+<div>
+	<table style = "width: 100px; height: 100px; text-align:center;">
+		<tr>
+			<td>
+				<b>Key</b>
+			</td>
+		</tr>
+			<td>
+				<img id = "fish1"  src="./guppy.png" width="64" height="49" alt="Guppy"><br>10 points
+			</td>
+		</tr>
+		</tr>
+			<td>
+				<br>
+ 				<img id = "whale" src="./whale.png" widght = "128" height = "98" alt="Mountain View"><br>200 points
+
+			</td>
+		<tr>
+		</tr>
+	</table>
+</div>
 
 <div class="row marketing">
 	<div class = "jumbotronFish">
@@ -119,7 +142,6 @@
 			<img id = "whale19" style = "display: none" src="./whale.png" widght = "128" height = "98" alt="Mountain View">
 			<img id = "whale20" style = "display: none" src="./whale.png" widght = "128" height = "98" alt="Mountain View">
 
-			<p>Number of Whales here</p>
 		</div>
 	</div>
 	<footer class="footer">
