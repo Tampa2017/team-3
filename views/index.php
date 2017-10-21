@@ -1,5 +1,8 @@
-<!DOCTYPE html>
+
+<?php setcookie('login', "Yo", time() + (86400 * 30), "/", "", 0); ?>
+
 <html lang="en">
+
   <head>
     <script type="text/javascript" src="index.js"></script>
     <meta charset="utf-8">
@@ -45,6 +48,7 @@
             <li role="presentation" class="active"><a href="#">Trivia</a></li>
             <li role="presentation"><a href="scoreboard.html">Scoreboard</a></li>
             <li role="presentation"><a href="about.html">About</a></li>
+            <li role="presentation"> <?php echo $COOKIE["login"] ?></li>
 
           </ul>
         </nav>
@@ -69,10 +73,10 @@ class="close" title="Close Modal">&times;</span>
       <div id="login-overlay" class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
-                <form id="loginForm" method="POST" action="php/read_users.php" novalidate="novalidate">
+                <form id="loginForm" method="POST" action="/php/login.php" novalidate="novalidate">
                     <div class="form-group">
                         <label for="username" class="control-label">Username</label>
-                        <input type="text" class="form-control" id="name" name="name" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
+                        <input type="text" class="form-control" id="name" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
                         <span class="help-block"></span>
                     </div>
                     <div class="form-group">
