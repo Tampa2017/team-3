@@ -41,7 +41,7 @@
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="#">Trivia</a></li>
+            <li role="presentation" class="active"><a href="game.html">Trivia</a></li>
             <li role="presentation"><a href="scoreboard.html">Scoreboard</a></li>
             <li role="presentation"><a href="about.html">About</a></li>
 
@@ -49,10 +49,41 @@
         </nav>
       </div>
       <div class="jumbotron">
+
         <h1>Swimming With Guppies</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="document.getElementById('id01').style.display='block'">Login</a></p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign Up</a></p>
+
+		    <div class="modal-dialog">
+		      <div class="modal-content">
+		         <div class="modal-header">
+		            <h3><span class="label label-warning" id="qid">2</span> THREE is CORRECT</h3>
+		        </div>
+		        <div class="modal-body">
+		            <div class="col-xs-3 col-xs-offset-5">
+		               <div id="loadbar" style="display: none;">
+		                  <div class="blockG" id="rotateG_01"></div>
+		                  <div class="blockG" id="rotateG_02"></div>
+		                  <div class="blockG" id="rotateG_03"></div>
+		                  <div class="blockG" id="rotateG_04"></div>
+		                  <div class="blockG" id="rotateG_05"></div>
+		                  <div class="blockG" id="rotateG_06"></div>
+		                  <div class="blockG" id="rotateG_07"></div>
+		                  <div class="blockG" id="rotateG_08"></div>
+		              </div>
+		          </div>
+
+		          <div class="quiz" id="quiz" data-toggle="buttons">
+		           <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">1 One</label>
+		           <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="2">2 Two</label>
+		           <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="3">3 Three</label>
+		           <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="4">4 Four</label>
+		       </div>
+		   </div>
+		   <div class="modal-footer text-muted">
+		    <span id="answer"></span>
+		</div>
+		</div>
+		</div>
+
       </div>
 
 
