@@ -158,10 +158,8 @@
 </body>
 <script>
 //alert('score is '+localStorage.getItem("points"));
-var whale = localStorage.getItem("points") / 200;
-whale = parseInt(whale);
-var fisher = localStorage.getItem("points") % 200;
-fisher = fisher / 10;
+var fisher = (localStorage.getItem("points")-200*parseInt(localStorage.getItem("points")/200))/10;
+var whale = parseInt((localStorage.getItem("points"))/200);
 //alert('mod '+fisher);
 //alert('whale   '+whale);
 pointy(fisher, whale);
