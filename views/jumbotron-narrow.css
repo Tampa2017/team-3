@@ -20,6 +20,11 @@ body {
   justify-content: center;
 }
 
+/* giving login buttons the same size */
+.btn-success {
+  width: 150px;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
