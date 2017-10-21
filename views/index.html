@@ -41,17 +41,20 @@
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
-            <script>if (localStorage.name){
-              document.getElementById("usr-nav-id").innerHTML = localStorage.name;
-            }
-            </script>
+            
 
             <li role="presentation" class="active"><a href="#">Trivia</a></li>
             <li role="presentation"><a href="scoreboard.html">Scoreboard</a></li>
             <li role="presentation"><a href="about.html">About</a></li>
             <li role="presentation"><a href="profile.html" id="usr-nav-id">Profile</a></li>
 
-
+            <script>
+                if (localStorage.name){
+                  console.log(localStorage.name);
+                  y = document.getElementById("usr-nav-id");
+                  y.innerHTML = localStorage.name;
+                  }
+            </script>
           </ul>
         </nav>
       </div>
@@ -63,13 +66,7 @@
       </div>
       <script>
         function login() {
-          console.log("test");
-          var x = document.getElementById("username-form");
-          text = x.value;
-          localStorage.name = text;
-          //document.getElementById("usr-nav-id").innerHTML = x.elements[0].value;
-          console.log(text);
-          console.log(document.getElementById("usr-nav-id").innerHTML);
+          localStorage.name = document.getElementById("username-form").value;
         }
       </script>
 
@@ -86,7 +83,7 @@ class="close" title="Close Modal">&times;</span>
       <div id="login-overlay" class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
-                <form id="loginForm"  novalidate="novalidate">
+                <form id="loginForm" method="POST"  novalidate="novalidate">
                     <div class="form-group">
                         <label for="username" class="control-label">Username</label>
                         <input type="text" class="form-control" id="username-form" name="name" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
