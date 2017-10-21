@@ -439,6 +439,7 @@
 
       $ans = 3;
 
+	  // Plays sound on right / wrong answers
       $.fn.checking = function(ck) {
           if (ck != $ans)
           {
@@ -492,7 +493,7 @@
       };
   });
 
-  });//]]>
+  });
 
   </script>
 
@@ -504,6 +505,7 @@
       <p><a id="playB" class="btn btn-lg btn-success" href="#" role="button"  onClick="soundB()">Play 🔊</a></p>
       <div class="header clearfix">
         <nav>
+			<!-- Navigation bar -->
           <ul class="nav nav-pills pull-right">
             <li role="presentation" ><a href="index.html">Home</a></li>
             <li role="presentation" class="active" ><a href="game.html">Trivia</a></li>
@@ -525,7 +527,10 @@
           </ul>
         </nav>
       </div>
+
+	  <!-- this is our website logo -->
 		  <img src="./logo.png" alt="Swimming with Guppies logo">
+		  
       <h4 align="center">Points: <span id="pointdisp"></span></h4>
         <div id = "questionone" class="modal-dialog">
           <div class="modal-content">
