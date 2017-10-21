@@ -3,9 +3,7 @@
   <head>
     <script type="text/javascript" src="index.js"></script>
     <link rel="stylesheet" href="lib/codemirror.css">
-       <script src="lib/codemirror.js"></script>
-       <script src="mode/javascript/javascript.js"></script>
-       <script src="addon/fold/foldcode.js"></script>
+<script src="lib/codemirror.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,26 +48,7 @@
         </nav>
       </div>
 
-      <form style="width:500px;">
-        <textarea id="code" name="code">
-alert("HI");
-//says HII
-        </textarea>
-    </form>
 
-    <script>
-        window.onload = function() {
-            window.editor = CodeMirror.fromTextArea(code, {
-                mode: "javascript",
-                lineNumbers: true,
-                lineWrapping: true,
-                foldGutter: {
-                    rangeFinder: new CodeMirror.fold.combine(CodeMirror.fold.brace, CodeMirror.fold.comment)
-                },
-                gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"]
-            });
-        };
-    </script>
 
 
       <div class="jumbotron">

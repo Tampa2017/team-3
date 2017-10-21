@@ -12,13 +12,9 @@ var fishScoreDisplay = 1;
 var whaleScore = 1;
 var whaleScoreDisplay = 1;
 
-$(document).ready(function(){
-	//code here...
-	var code = $(".codemirror-textarea")[0];
-	var editor = CodeMirror.fromTextArea(code, {
-		lineNumbers : true
-	});
-});
+var editor = CodeMirror.fromTextArea(myTextarea, {
+    lineNumbers: true
+  });
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
