@@ -1,10 +1,10 @@
 # Team 3
 # Best Team
-## Isaiah
-### Henry
-### Chad
-### Iowa
-### Chris
+Isaiah
+Henry
+Chad
+Alex
+Chris
 
 # Topic: this is a code4good project
 The intent is to create a product for a non-profit orginization for them to used to succeed in their challenges and missions. 
