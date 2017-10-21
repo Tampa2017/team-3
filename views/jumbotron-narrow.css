@@ -2,6 +2,13 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  background-image: url("waves3.png");
+  width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-attachment:fixed;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navbar Centering */
