@@ -8,7 +8,7 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<link rel="icon" href="../../favicon.ico">
+	<link rel="icon" href="favicon.ico">
 
 	<title>Scoreboard</title>
 
@@ -34,6 +34,10 @@
 </head>
 
 <body>
+  <!-- THIS ALERTS WITH SCORE -->
+  <script>
+  alert('score is '+localStorage.getItem("points"));
+  </script>
 	<p><a id="playB" class="btn btn-lg btn-success" href="#" role="button"  onClick="soundB()">Play 🔊</a></p>
 	<div class="container">
 		<div class="header clearfix">
