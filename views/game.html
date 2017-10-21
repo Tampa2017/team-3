@@ -439,7 +439,6 @@
 
       $ans = 3;
 
-	  // Plays sound on right / wrong answers
       $.fn.checking = function(ck) {
           if (ck != $ans)
           {
@@ -493,7 +492,7 @@
       };
   });
 
-  });
+  });//]]>
 
   </script>
 
@@ -505,7 +504,6 @@
       <p><a id="playB" class="btn btn-lg btn-success" href="#" role="button"  onClick="soundB()">Play 🔊</a></p>
       <div class="header clearfix">
         <nav>
-			<!-- Navigation bar -->
           <ul class="nav nav-pills pull-right">
             <li role="presentation" ><a href="index.html">Home</a></li>
             <li role="presentation" class="active" ><a href="game.html">Trivia</a></li>
@@ -527,15 +525,12 @@
           </ul>
         </nav>
       </div>
-
-	  <!-- this is our website logo -->
 		  <img src="./logo.png" alt="Swimming with Guppies logo">
-		  
       <h4 align="center">Points: <span id="pointdisp"></span></h4>
         <div id = "questionone" class="modal-dialog">
           <div class="modal-content">
              <div class="modal-header">
-                <h3><span class="label label-warning" id="qid">1</span> THREE is CORRECT</h3>
+                <h4><span class="label label-warning" id="qid">1</span> Did you remember to recycle today?</h4>
             </div>
             <div class="modal-body">
                 <div class="col-xs-3 col-xs-offset-5">
@@ -552,10 +547,8 @@
               </div>
 
               <div class="quiz" id="quiz" data-toggle="buttons">
-               <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">1 One</label>
-               <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="soundBad()" type="radio" name="q_answer" value="2">2 Two</label>
-               <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="correctS()" type="radio" name="q_answer" value="3">3 Three</label>
-               <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="4">4 Four</label>
+               <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="correctS()" type="radio" name="q_answer" value="3">Yes</label>
+               <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="soundBad()" type="radio" name="q_answer" value="2">No</label>
            </div>
        </div>
        <div class="modal-footer text-muted">
@@ -568,7 +561,7 @@
       <div id = "questiontwo" class="modal-dialog" style="display: none;">
         <div class="modal-content">
            <div class="modal-header">
-              <h3><span class="label label-warning" id="qid">2</span> THREE is CORRECT</h3>
+              <h4><span class="label label-warning" id="qid">2</span> Are sharks</h4>
           </div>
           <div class="modal-body">
               <div class="col-xs-3 col-xs-offset-5">
@@ -585,10 +578,9 @@
             </div>
 
             <div class="quiz" id="quiz" data-toggle="buttons">
-             <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">1 One</label>
-             <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="soundBad()" type="radio" name="q_answer" value="2">2 Two</label>
-             <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="correctS()" type="radio" name="q_answer" value="3">3 Three</label>
-             <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="4">4 Four</label>
+             <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">Herbivores</label>
+             <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="soundBad()" type="radio" name="q_answer" value="2">Omnivores</label>
+             <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="correctS()" type="radio" name="q_answer" value="3">Carnivores</label>
          </div>
      </div>
      <div class="modal-footer text-muted">
@@ -601,7 +593,7 @@
   <div id = "questionthree" class="modal-dialog" style="display: none;">
     <div class="modal-content">
        <div class="modal-header">
-          <h3><span class="label label-warning" id="qid">3</span> THREE is CORRECT</h3>
+          <h4><span class="label label-warning" id="qid">3</span> How old can sea turtles live to be?</h4>
       </div>
       <div class="modal-body">
           <div class="col-xs-3 col-xs-offset-5">
@@ -618,10 +610,10 @@
         </div>
 
         <div class="quiz" id="quiz" data-toggle="buttons">
-         <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">1 One</label>
-         <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="soundBad()" type="radio" name="q_answer" value="2">2 Two</label>
-         <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="correctS()" type="radio" name="q_answer" value="3">3 Three</label>
-         <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="4">4 Four</label>
+         <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">20 Year Old</label>
+         <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="soundBad()" type="radio" name="q_answer" value="2">30 Years Old</label>
+         <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="4">40 Years Old</label>
+         <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="correctS()" type="radio" name="q_answer" value="3">70+ Years Old</label>
      </div>
  </div>
  <div class="modal-footer text-muted">
@@ -635,7 +627,7 @@
 <div id = "questionfour" class="modal-dialog" style="display: none;">
   <div class="modal-content">
      <div class="modal-header">
-        <h3><span class="label label-warning" id="qid">4</span> THREE is CORRECT</h3>
+        <h4><span class="label label-warning" id="qid">4</span> Shark populations are declining due to</h4>
     </div>
     <div class="modal-body">
         <div class="col-xs-3 col-xs-offset-5">
@@ -652,10 +644,10 @@
       </div>
 
       <div class="quiz" id="quiz" data-toggle="buttons">
-       <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">1 One</label>
-       <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="soundBad()" type="radio" name="q_answer" value="2">2 Two</label>
-       <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="correctS()" type="radio" name="q_answer" value="3">3 Three</label>
-       <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="4">4 Four</label>
+       <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">swimming too much</label>
+       <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="soundBad()" type="radio" name="q_answer" value="2">running out of food</label>
+       <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="correctS()" type="radio" name="q_answer" value="3">people hunting them for their fins</label>
+       <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="4">Sharknados</label>
    </div>
 </div>
 <div class="modal-footer text-muted">
@@ -669,7 +661,7 @@
 <div id = "questionfive" class="modal-dialog" style="display: none;">
   <div class="modal-content">
      <div class="modal-header">
-        <h3><span class="label label-warning" id="qid">5</span> THREE is CORRECT</h3>
+        <h4><span class="label label-warning" id="qid">5</span> Forests provide more oxygen than coral reefs</h4>
     </div>
     <div class="modal-body">
         <div class="col-xs-3 col-xs-offset-5">
@@ -686,10 +678,8 @@
       </div>
 
       <div class="quiz" id="quiz" data-toggle="buttons">
-       <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">1 One</label>
-       <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="soundBad()" type="radio" name="q_answer" value="2">2 Two</label>
-       <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="correctS()" type="radio" name="q_answer" value="3">3 Three</label>
-       <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="4">4 Four</label>
+       <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="correctS()" type="radio" name="q_answer" value="3">True</label>
+              <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="soundBad()" type="radio" name="q_answer" value="2">False</label>
    </div>
 </div>
 <div class="modal-footer text-muted">
