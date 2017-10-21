@@ -6,6 +6,7 @@ var badSound = new Audio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/bad
 var winSound = new Audio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/win.mp3");
 var back = new Audio("backWave.WAV");
 var Bbool = false;
+var score = 1;
 
 
 // When the user clicks anywhere outside of the modal, close it
@@ -28,4 +29,6 @@ else {
   document.getElementById("playB").innerHTML = "Play 🔊";
   Bbool = false;
 }
+
+	document.getElementById("fish"+score).style.display = "initial";
 }
