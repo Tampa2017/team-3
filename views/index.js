@@ -29,7 +29,7 @@ window.onclick = function(event) {
 
 function pointy(x, y)
 {
-  for(k = 1; k < (x + 1); k++)
+  for(k = 1; k <= (x + 1); k++)
   {
   document.getElementById("fish"+k).style.display = "initial";
   }
