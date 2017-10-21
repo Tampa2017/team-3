@@ -444,6 +444,23 @@
           {
             var badSound = new Audio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/bad.mp3");
             badSound.play();
+            // loop through questions 1-5
+            if (document.getElementById("questionone").style.display !== "none"){
+              document.getElementById("questionone").style.display = "none";
+              document.getElementById("questiontwo").style.display = "block";
+            } else if (document.getElementById("questiontwo").style.display !== "none"){
+              document.getElementById("questiontwo").style.display = "none";
+              document.getElementById("questionthree").style.display = "block";
+            } else if (document.getElementById("questionthree").style.display !== "none"){
+              document.getElementById("questionthree").style.display = "none";
+              document.getElementById("questionfour").style.display = "block";
+            } else if (document.getElementById("questionfour").style.display !== "none"){
+              document.getElementById("questionfour").style.display = "none";
+              document.getElementById("questionfive").style.display = "block";
+            } else if (document.getElementById("questionfive").style.display !== "none"){
+              document.getElementById("questionfive").style.display = "none";
+              document.getElementById("questionone").style.display = "block";
+            }
               return 'INCORRECT';
             }
           else
@@ -453,6 +470,23 @@
             var pointval = parseInt(localStorage.getItem("points"))+10;
             localStorage.setItem("points", pointval);
             document.getElementById("pointdisp").innerHTML = pointval;
+            // loop through questions 1-5
+            if (document.getElementById("questionone").style.display !== "none"){
+              document.getElementById("questionone").style.display = "none";
+              document.getElementById("questiontwo").style.display = "block";
+            } else if (document.getElementById("questiontwo").style.display !== "none"){
+              document.getElementById("questiontwo").style.display = "none";
+              document.getElementById("questionthree").style.display = "block";
+            } else if (document.getElementById("questionthree").style.display !== "none"){
+              document.getElementById("questionthree").style.display = "none";
+              document.getElementById("questionfour").style.display = "block";
+            } else if (document.getElementById("questionfour").style.display !== "none"){
+              document.getElementById("questionfour").style.display = "none";
+              document.getElementById("questionfive").style.display = "block";
+            } else if (document.getElementById("questionfive").style.display !== "none"){
+              document.getElementById("questionfive").style.display = "none";
+              document.getElementById("questionone").style.display = "block";
+            }
             return 'CORRECT';
             }
       };
@@ -483,12 +517,11 @@
 
         <h1>Swimming With Guppies</h1>
       </div>
-
-        <div class="modal-dialog">
+      <h4 align="center">Points: <span id="pointdisp"></span></h4>
+        <div id = "questionone" class="modal-dialog">
           <div class="modal-content">
              <div class="modal-header">
-             <h4 align="center">Points: <span id="pointdisp"></span></h4>
-                <h3><span class="label label-warning" id="qid">2</span> THREE is CORRECT</h3>
+                <h3><span class="label label-warning" id="qid">1</span> THREE is CORRECT</h3>
             </div>
             <div class="modal-body">
                 <div class="col-xs-3 col-xs-offset-5">
@@ -516,6 +549,142 @@
     </div>
     </div>
     </div>
+
+
+      <div id = "questiontwo" class="modal-dialog" style="display: none;">
+        <div class="modal-content">
+           <div class="modal-header">
+              <h3><span class="label label-warning" id="qid">2</span> THREE is CORRECT</h3>
+          </div>
+          <div class="modal-body">
+              <div class="col-xs-3 col-xs-offset-5">
+                 <div id="loadbar" style="display: none;">
+                    <div class="blockG" id="rotateG_01"></div>
+                    <div class="blockG" id="rotateG_02"></div>
+                    <div class="blockG" id="rotateG_03"></div>
+                    <div class="blockG" id="rotateG_04"></div>
+                    <div class="blockG" id="rotateG_05"></div>
+                    <div class="blockG" id="rotateG_06"></div>
+                    <div class="blockG" id="rotateG_07"></div>
+                    <div class="blockG" id="rotateG_08"></div>
+                </div>
+            </div>
+
+            <div class="quiz" id="quiz" data-toggle="buttons">
+             <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">1 One</label>
+             <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="soundBad()" type="radio" name="q_answer" value="2">2 Two</label>
+             <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="correctS()" type="radio" name="q_answer" value="3">3 Three</label>
+             <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="4">4 Four</label>
+         </div>
+     </div>
+     <div class="modal-footer text-muted">
+      <span id="answer"></span>
+  </div>
+  </div>
+  </div>
+
+
+  <div id = "questionthree" class="modal-dialog" style="display: none;">
+    <div class="modal-content">
+       <div class="modal-header">
+          <h3><span class="label label-warning" id="qid">3</span> THREE is CORRECT</h3>
+      </div>
+      <div class="modal-body">
+          <div class="col-xs-3 col-xs-offset-5">
+             <div id="loadbar" style="display: none;">
+                <div class="blockG" id="rotateG_01"></div>
+                <div class="blockG" id="rotateG_02"></div>
+                <div class="blockG" id="rotateG_03"></div>
+                <div class="blockG" id="rotateG_04"></div>
+                <div class="blockG" id="rotateG_05"></div>
+                <div class="blockG" id="rotateG_06"></div>
+                <div class="blockG" id="rotateG_07"></div>
+                <div class="blockG" id="rotateG_08"></div>
+            </div>
+        </div>
+
+        <div class="quiz" id="quiz" data-toggle="buttons">
+         <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">1 One</label>
+         <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="soundBad()" type="radio" name="q_answer" value="2">2 Two</label>
+         <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="correctS()" type="radio" name="q_answer" value="3">3 Three</label>
+         <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="4">4 Four</label>
+     </div>
+ </div>
+ <div class="modal-footer text-muted">
+  <span id="answer"></span>
+</div>
+</div>
+</div>
+
+
+
+<div id = "questionfour" class="modal-dialog" style="display: none;">
+  <div class="modal-content">
+     <div class="modal-header">
+        <h3><span class="label label-warning" id="qid">4</span> THREE is CORRECT</h3>
+    </div>
+    <div class="modal-body">
+        <div class="col-xs-3 col-xs-offset-5">
+           <div id="loadbar" style="display: none;">
+              <div class="blockG" id="rotateG_01"></div>
+              <div class="blockG" id="rotateG_02"></div>
+              <div class="blockG" id="rotateG_03"></div>
+              <div class="blockG" id="rotateG_04"></div>
+              <div class="blockG" id="rotateG_05"></div>
+              <div class="blockG" id="rotateG_06"></div>
+              <div class="blockG" id="rotateG_07"></div>
+              <div class="blockG" id="rotateG_08"></div>
+          </div>
+      </div>
+
+      <div class="quiz" id="quiz" data-toggle="buttons">
+       <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">1 One</label>
+       <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="soundBad()" type="radio" name="q_answer" value="2">2 Two</label>
+       <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="correctS()" type="radio" name="q_answer" value="3">3 Three</label>
+       <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="4">4 Four</label>
+   </div>
+</div>
+<div class="modal-footer text-muted">
+<span id="answer"></span>
+</div>
+</div>
+</div>
+
+
+
+<div id = "questionfive" class="modal-dialog" style="display: none;">
+  <div class="modal-content">
+     <div class="modal-header">
+        <h3><span class="label label-warning" id="qid">5</span> THREE is CORRECT</h3>
+    </div>
+    <div class="modal-body">
+        <div class="col-xs-3 col-xs-offset-5">
+           <div id="loadbar" style="display: none;">
+              <div class="blockG" id="rotateG_01"></div>
+              <div class="blockG" id="rotateG_02"></div>
+              <div class="blockG" id="rotateG_03"></div>
+              <div class="blockG" id="rotateG_04"></div>
+              <div class="blockG" id="rotateG_05"></div>
+              <div class="blockG" id="rotateG_06"></div>
+              <div class="blockG" id="rotateG_07"></div>
+              <div class="blockG" id="rotateG_08"></div>
+          </div>
+      </div>
+
+      <div class="quiz" id="quiz" data-toggle="buttons">
+       <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">1 One</label>
+       <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="soundBad()" type="radio" name="q_answer" value="2">2 Two</label>
+       <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input onClick="correctS()" type="radio" name="q_answer" value="3">3 Three</label>
+       <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="4">4 Four</label>
+   </div>
+</div>
+<div class="modal-footer text-muted">
+<span id="answer"></span>
+</div>
+</div>
+</div>
+
+
     </div>
 
       <script>
