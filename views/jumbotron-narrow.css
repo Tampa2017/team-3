@@ -10,7 +10,6 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
 /* Navbar Centering */
 .nav {
 	left: 0px;
@@ -21,8 +20,9 @@ body {
 }
 
 /* giving login buttons the same size */
-.btn-success {
+.btn {
   width: 150px;
+  background-color: #337ab7;
 }
 
 .centerlogin {
@@ -177,4 +177,12 @@ body {
 @keyframes animatezoom {
     from {transform: scale(0)}
     to {transform: scale(1)}
+}
+#playB {
+  height: auto;
+  width: auto;
+  font-size: 14px;
+  position: fixed;
+  top: 5px;
+  left: 5px;
 }
