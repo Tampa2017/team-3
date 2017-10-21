@@ -37,6 +37,17 @@
   <!-- THIS ALERTS WITH SCORE -->
   <script>
   alert('score is '+localStorage.getItem("points"));
+  var fishScore = localStorage.getItem("points") / 10;
+  alert('mod '+fishScore);
+
+  for(i = 0; i < fishScore; i++)
+  {
+    alert(i);
+  document.getElementById("fish"+i).style.display = "initial";
+
+}
+
+
   </script>
 	<p><a id="playB" class="btn btn-lg btn-success" href="#" role="button"  onClick="soundB()">Play 🔊</a></p>
 	<div class="container">
