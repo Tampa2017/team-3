@@ -11,6 +11,15 @@ body {
     padding: 0;
 }
 
+/* Navbar Centering */
+.nav {
+  left: 0px;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
