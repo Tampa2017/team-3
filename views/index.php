@@ -48,7 +48,7 @@
             <li role="presentation" class="active"><a href="#">Trivia</a></li>
             <li role="presentation"><a href="scoreboard.html">Scoreboard</a></li>
             <li role="presentation"><a href="about.html">About</a></li>
-            <li role="presentation"> <?php echo $COOKIE["login"] ?></li>
+            <li role="presentation"> <?php echo $COOKIE[] ?></li>
 
           </ul>
         </nav>
