@@ -40,18 +40,20 @@
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
-                <li role="presentation" ><a href="index.html">Trivia</a></li>
-                <li role="presentation"><a href="scoreboard.html">Scoreboard</a></li>
-                <li role="presentation"><a href="about.html">About</a></li>
-                <li role="presentation"><a href="profile.html" id="usr-nav-id">Profile</a></li>
-    
-                <script>
-                    if (localStorage.name){
-                      console.log(localStorage.name);
-                      y = document.getElementById("usr-nav-id");
-                      y.innerHTML = localStorage.name;
-                      }
-                </script>
+            <li role="presentation" ><a href="index.html">Home</a></li>
+            <li role="presentation" ><a href="game.html">Trivia</a></li>
+            <li role="presentation"><a href="scoreboard.html">Scoreboard</a></li>
+            <li role="presentation" class="active"><a href="about.html">About</a></li>
+            <li role="presentation"><a href="profile.html" id="usr-nav-id">Profile</a></li>
+            <li role="presentation"><a href="information.html">Info</a> </li>
+
+            <script>
+                if (localStorage.name){
+                  console.log(localStorage.name);
+                  y = document.getElementById("usr-nav-id");
+                  y.innerHTML = localStorage.name;
+                  }
+            </script>
           </ul>
         </nav>
       </div>
@@ -82,37 +84,7 @@
       </footer>
 
     </div> <!-- /container -->
-<!-- The Modal -->
-<div id="id01" class="modal">
-        <span onclick="document.getElementById('id01').style.display='none'"
-      class="close" title="Close Modal">&times;</span>
-      
-      
-        <!-- Modal Content -->
-      
-            <div id="login-overlay" class="modal-dialog">
-              <div class="modal-content">
-                  <div class="modal-body">
-                      <form id="msg-form" method="POST"  novalidate="novalidate">
-                          <div class="form-group">
-                              <label for="subject" class="control-label">Subject</label>
-                              <input type="text" class="form-control" id="username-form" name="name" value="" required="" title="" placeholder="">
-                              <span class="help-block"></span>
-                          </div>
-                          <div class="form-group">
-                              <label for="text-area" class="control-label">Msg</label>
-                              <br>
-                              <textarea rows="4" col="50" style="margin: 0px; height: 25em; width: 30em;"></textarea>
-                              <span class="help-block"></span>
-                          </div>
-                          <div id="loginErrorMsg" class="alert alert-error hide">Message Error</div>
-                          <button  onclick="msg()" style="display: block; margin: 0 auto;"  class="btn btn-success btn-block">Send</button>
-                      </form>
-                  </div>
-              </div>
-          </div>
-      
-          </div> <!-- /container -->
+
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
