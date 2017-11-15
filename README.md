@@ -12,4 +12,3 @@ The intent is to create a product for ODCA to be used for outreach and spreading
 
 Built on HTML, JavaScript, and CSS
 
-
